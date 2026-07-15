@@ -1,0 +1,28 @@
+name: Morning Weather Agent
+
+on:
+  schedule:
+    # Runs at 05:00 UTC daily — adjust for your timezone.
+    # e.g. Israel Standard Time (UTC+2/+3) waking at 7am -> use "0 4 * * *" or "0 5 * * *"
+    - cron: "0 5 * * *"
+  workflow_dispatch: {}  # lets you manually trigger a test run from the Actions tab
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests anthropic
+
+      - name: Run weather agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          CITY: ${{ secrets.CITY }}
+        run: python agent.py
