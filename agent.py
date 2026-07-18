@@ -57,6 +57,16 @@ def fetch_weather(lat: float, lon: float) -> dict:
     return resp.json()["daily"]
 
 
+def extract_text(message) -> str:
+    """Claude's response can include non-text blocks (e.g. thinking) before
+    the actual answer, so find the first text block instead of assuming
+    content[0] is always text."""
+    for block in message.content:
+        if block.type == "text":
+            return block.text.strip()
+    raise ValueError("No text block found in Claude's response")
+
+
 def summarize_with_claude(client: anthropic.Anthropic, city: str, daily: dict) -> str:
     """Reasoning step: Claude turns raw numbers into a short briefing."""
     raw = "\n".join(
@@ -85,7 +95,7 @@ def summarize_with_claude(client: anthropic.Anthropic, city: str, daily: dict) -
             }
         ],
     )
-    return message.content[0].text.strip()
+    return extract_text(message)
 
 
 def hebrew_word_of_the_day(client: anthropic.Anthropic) -> str:
@@ -115,7 +125,7 @@ def hebrew_word_of_the_day(client: anthropic.Anthropic) -> str:
             }
         ],
     )
-    return message.content[0].text.strip()
+    return extract_text(message)
 
 
 def send_push(title: str, body: str) -> None:
