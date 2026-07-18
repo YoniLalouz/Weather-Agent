@@ -88,10 +88,14 @@ def summarize_with_claude(city: str, daily: dict) -> str:
 
 def send_push(title: str, body: str) -> None:
     """Action step: push the briefing to your phone via ntfy.sh."""
+    # HTTP headers only allow Latin-1/ASCII characters, so any special
+    # characters (em dashes, accented letters, etc.) must be stripped or
+    # replaced before going into a header value like Title.
+    safe_title = title.encode("ascii", "ignore").decode("ascii")
     requests.post(
         f"https://ntfy.sh/{NTFY_TOPIC}",
         data=body.encode("utf-8"),
-        headers={"Title": title},
+        headers={"Title": safe_title},
         timeout=10,
     )
 
@@ -100,7 +104,7 @@ def main():
     location = geocode_city(CITY)
     daily = fetch_weather(location["lat"], location["lon"])
     briefing = summarize_with_claude(location["name"], daily)
-    send_push(f"Weather — {location['name']}", briefing)
+    send_push(f"Weather - {location['name']}", briefing)
     print(briefing)  # also visible in GitHub Actions logs
 
 
