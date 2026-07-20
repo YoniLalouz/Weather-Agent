@@ -6,7 +6,7 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: write
+  contents: write  # needed so the workflow can commit docs/index.html + docs/data.json back to the repo
 
 jobs:
   run-agent:
