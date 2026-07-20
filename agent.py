@@ -120,7 +120,7 @@ def summarize_with_claude(client: anthropic.Anthropic, city: str, daily: dict) -
     )
     message = client.messages.create(
         model="claude-sonnet-5",
-        max_tokens=200,
+        max_tokens=500,
         messages=[
             {
                 "role": "user",
@@ -152,7 +152,7 @@ def hebrew_word_of_the_day(client: anthropic.Anthropic, recent_words: list) -> d
 
     message = client.messages.create(
         model="claude-sonnet-5",
-        max_tokens=350,
+        max_tokens=700,
         messages=[
             {
                 "role": "user",
@@ -207,7 +207,7 @@ def generate_word_illustration(client: anthropic.Anthropic, meaning: str, uid: s
     try:
         message = client.messages.create(
             model="claude-sonnet-5",
-            max_tokens=1200,
+            max_tokens=1800,
             messages=[
                 {
                     "role": "user",
