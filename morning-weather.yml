@@ -2,10 +2,11 @@ name: Morning Weather Agent
 
 on:
   schedule:
-    # Runs at 05:00 UTC daily — adjust for your timezone.
-    # e.g. Israel Standard Time (UTC+2/+3) waking at 7am -> use "0 4 * * *" or "0 5 * * *"
-    - cron: "0 5 * * *"
-  workflow_dispatch: {}  # lets you manually trigger a test run from the Actions tab
+    - cron: "13 5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
 
 jobs:
   run-agent:
@@ -25,4 +26,13 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           CITY: ${{ secrets.CITY }}
+          PAGE_URL: ${{ secrets.PAGE_URL }}
         run: python agent.py
+
+      - name: Commit and push the updated page
+        run: |
+          git config user.name "weather-agent-bot"
+          git config user.email "actions@github.com"
+          git add docs/index.html docs/data.json
+          git diff --staged --quiet || git commit -m "Update daily brief"
+          git push
