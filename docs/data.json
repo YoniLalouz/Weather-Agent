@@ -1,5 +1,23 @@
 [
   {
+    "date_iso": "2026-07-22",
+    "date_label": "Wednesday, July 22",
+    "city": "Tel Aviv",
+    "hi": 89.6,
+    "lo": 77.0,
+    "condition": "partly_cloudy",
+    "hue": 128,
+    "briefing": "Good morning, Tel Aviv! ☀️ Today's shaping up hot and dry with a high near 90°F (32°C) and an overnight low around 77°F (25°C) — zero chance of rain, so no umbrella needed. Stay hydrated and seek shade midday, as similar warm, dry conditions stick around through the next couple of days too!",
+    "hebrew": {
+      "word": "לְהִסְתַּדֵּר",
+      "meaning": "lehistader - to manage/get by/work out",
+      "pos": "verb",
+      "conjugation": "masc: מִסְתַּדֵּר (mistader) | fem: מִסְתַּדֶּרֶת (mistederet)",
+      "example": "הוא תמיד מִסְתַּדֵּר גם בלי עזרה. (He always manages even without help.)",
+      "illustration": "<svg viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<radialGradient id=\"w2026-07-22_bg\" cx=\"35%\" cy=\"30%\" r=\"80%\">\n<stop offset=\"0%\" stop-color=\"#fff4d6\"/>\n<stop offset=\"100%\" stop-color=\"#ffcf6b\"/>\n</radialGradient>\n<linearGradient id=\"w2026-07-22_body\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n<stop offset=\"0%\" stop-color=\"#7ee0b8\"/>\n<stop offset=\"100%\" stop-color=\"#4bc79a\"/>\n</linearGradient>\n<linearGradient id=\"w2026-07-22_arm\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n<stop offset=\"0%\" stop-color=\"#ffd28a\"/>\n<stop offset=\"100%\" stop-color=\"#ffb454\"/>\n</linearGradient>\n</defs>\n\n<circle cx=\"100\" cy=\"100\" r=\"92\" fill=\"url(#w2026-07-22_bg)\"/>\n\n<path d=\"M65 150 Q60 100 100 95 Q140 100 135 150 Q100 165 65 150 Z\" fill=\"url(#w2026-07-22_body)\"/>\n\n<circle cx=\"100\" cy=\"70\" r=\"30\" fill=\"#ffdca3\"/>\n\n<path d=\"M75 60 Q90 45 105 60\" stroke=\"#3a2b1a\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/>\n<circle cx=\"88\" cy=\"70\" r=\"4\" fill=\"#3a2b1a\"/>\n<circle cx=\"112\" cy=\"70\" r=\"4\" fill=\"#3a2b1a\"/>\n<path d=\"M92 82 Q100 88 108 82\" stroke=\"#a5673f\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/>\n\n<path d=\"M135 110 Q160 100 165 75\" stroke=\"url(#w2026-07-22_arm)\" stroke-width=\"18\" fill=\"none\" stroke-linecap=\"round\"/>\n<circle cx=\"150\" cy=\"95\" r=\"16\" fill=\"url(#w2026-07-22_arm)\"/>\n\n<path d=\"M65 115 Q45 120 40 100\" stroke=\"url(#w2026-07-22_arm)\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\"/>\n\n<path d=\"M160 55 L165 68 L178 68 L167 76 L171 90 L160 82 L149 90 L153 76 L142 68 L155 68 Z\" fill=\"#ffe27a\"/>\n\n<path d=\"M45 145 Q100 175 155 145\" stroke=\"#3a9c76\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/>\n</svg>"
+    }
+  },
+  {
     "date_iso": "2026-07-21",
     "date_label": "Tuesday, July 21",
     "city": "Tel Aviv",
