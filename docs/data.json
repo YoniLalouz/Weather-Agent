@@ -1,5 +1,23 @@
 [
   {
+    "date_iso": "2026-07-23",
+    "date_label": "Thursday, July 23",
+    "city": "Tel Aviv",
+    "hi": 89.7,
+    "lo": 77.6,
+    "condition": "partly_cloudy",
+    "hue": 223,
+    "briefing": "Good morning, Tel Aviv! Today's looking hot and dry with a high near 90°F (32°C) and an overnight low around 78°F (25°C) — no rain in sight. Heads up: temps climb even further by Saturday, topping out near 93°F, so stay hydrated and seek shade during peak afternoon hours!",
+    "hebrew": {
+      "word": "לְשַׁכְנֵעַ",
+      "meaning": "lecshakhne'a (leshachne'a) - to convince",
+      "pos": "verb",
+      "conjugation": "masc: מְשַׁכְנֵעַ (meshachne'a) | fem: מְשַׁכְנַעַת (meshachnaat)",
+      "example": "הוא ניסה לְשַׁכְנֵעַ אותי לבוא למסיבה (He tried to convince me to come to the party)",
+      "illustration": "<svg viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"100\" cy=\"100\" r=\"70\" fill=\"#f0c869\"/></svg>"
+    }
+  },
+  {
     "date_iso": "2026-07-22",
     "date_label": "Wednesday, July 22",
     "city": "Tel Aviv",
