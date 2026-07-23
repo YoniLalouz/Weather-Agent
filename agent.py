@@ -626,9 +626,19 @@ def send_push(title: str, body: str, click_url: str = "") -> None:
 
 
 def main():
+    today = date.today()
+    history = load_history()
+
+    # If today's entry already exists, skip everything - this lets the
+    # workflow run frequently (to land close to the target time even if
+    # GitHub's scheduler is delayed) without wasting API calls or sending
+    # duplicate notifications.
+    if history and history[0].get("date_iso") == today.isoformat():
+        print(f"Already generated today's brief ({today.isoformat()}) - skipping.")
+        return
+
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
-    history = load_history()
     recent_words = [e["hebrew"]["word"] for e in history[:30] if e.get("hebrew", {}).get("word")]
 
     location = geocode_city(CITY)
@@ -636,7 +646,6 @@ def main():
     briefing = summarize_with_claude(client, location["name"], daily)
     hebrew = hebrew_word_of_the_day(client, recent_words)
 
-    today = date.today()
     illustration = generate_word_illustration(client, hebrew["meaning"], f"w{today.isoformat()}")
     hebrew["illustration"] = illustration
 
@@ -657,8 +666,6 @@ def main():
         "hebrew": hebrew,
     }
 
-    # Avoid duplicate entries if the workflow is run more than once today
-    history = [e for e in history if e.get("date_iso") != entry["date_iso"]]
     history.insert(0, entry)
     history = history[:MAX_HISTORY_DAYS]
     save_history(history)
