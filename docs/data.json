@@ -1,5 +1,23 @@
 [
   {
+    "date_iso": "2026-07-24",
+    "date_label": "Friday, July 24",
+    "city": "Tel Aviv",
+    "hi": 88.5,
+    "lo": 78.6,
+    "condition": "partly_cloudy",
+    "hue": 301,
+    "briefing": "Good morning! Today in Tel Aviv expect a warm high of about 31°C (88.5°F) with a mild low near 26°C (78.6°F) and clear skies, no rain in sight. Heads up that tomorrow climbs even higher to around 33°C (92.3°F), so stay hydrated, before things ease slightly by Sunday with a 20% chance of rain. Enjoy the sunshine!",
+    "hebrew": {
+      "word": "לְהִתְעַקֵּשׁ",
+      "meaning": "lehitakesh - to insist / to be stubborn",
+      "pos": "verb",
+      "conjugation": "masc: מִתְעַקֵּשׁ (mitakesh) | fem: מִתְעַקֶּשֶׁת (mitakeshet)",
+      "example": "הוא תמיד מתעקש לעשות הכל לבד. (He always insists on doing everything by himself.)",
+      "illustration": "<svg viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<linearGradient id=\"w2026-07-24_bg\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n<stop offset=\"0\" stop-color=\"#FFE8B0\"/>\n<stop offset=\"1\" stop-color=\"#FFCF7A\"/>\n</linearGradient>\n<radialGradient id=\"w2026-07-24_body\" cx=\"0.35\" cy=\"0.3\" r=\"0.8\">\n<stop offset=\"0\" stop-color=\"#8FD8C7\"/>\n<stop offset=\"1\" stop-color=\"#4FB8A0\"/>\n</radialGradient>\n</defs>\n\n<rect x=\"10\" y=\"10\" width=\"180\" height=\"180\" rx=\"34\" fill=\"url(#w2026-07-24_bg)\"/>\n\n<line x1=\"55\" y1=\"178\" x2=\"45\" y2=\"188\" stroke=\"#B0805A\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n<line x1=\"145\" y1=\"178\" x2=\"155\" y2=\"188\" stroke=\"#B0805A\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n\n<rect x=\"70\" y=\"140\" width=\"20\" height=\"42\" rx=\"9\" fill=\"#3D8F7B\"/>\n<rect x=\"110\" y=\"140\" width=\"20\" height=\"42\" rx=\"9\" fill=\"#3D8F7B\"/>\n\n<ellipse cx=\"100\" cy=\"110\" rx=\"58\" ry=\"55\" fill=\"url(#w2026-07-24_body)\"/>\n\n<path d=\"M42 108 Q30 128 55 138 Q60 122 50 112 Z\" fill=\"#3D8F7B\"/>\n<path d=\"M158 108 Q170 128 145 138 Q140 122 150 112 Z\" fill=\"#3D8F7B\"/>\n\n<circle cx=\"78\" cy=\"112\" r=\"27\" fill=\"#3D8F7B\"/>\n<circle cx=\"122\" cy=\"112\" r=\"27\" fill=\"#3D8F7B\"/>\n\n<circle cx=\"82\" cy=\"105\" r=\"7\" fill=\"#2A2A2A\"/>\n<circle cx=\"118\" cy=\"105\" r=\"7\" fill=\"#2A2A2A\"/>\n\n<path d=\"M68 90 Q80 80 92 88\" stroke=\"#2A2A2A\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/>\n<path d=\"M108 88 Q120 80 132 90\" stroke=\"#2A2A2A\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/>\n\n<path d=\"M84 128 Q100 118 116 128\" stroke=\"#2A2A2A\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/>\n\n<circle cx=\"66\" cy=\"120\" r=\"7\" fill=\"#E8837A\" opacity=\"0.5\"/>\n<circle cx=\"134\" cy=\"120\" r=\"7\" fill=\"#E8837A\" opacity=\"0.5\"/>\n</svg>"
+    }
+  },
+  {
     "date_iso": "2026-07-23",
     "date_label": "Thursday, July 23",
     "city": "Tel Aviv",
